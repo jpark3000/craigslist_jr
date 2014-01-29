@@ -6,9 +6,4 @@
 
 
 
-# pets.posts << Post.create(title: 'Cat for sale',
-#                           price: 100,
-#                           description: "Very friendly, 7 years old, needs loving home. Black and White.",
-#                           location: 'Chicago, IL',
-#                           phone_number: '987-457-3247',
-#                           email: 'catlady@gmail.com')
+# pets.posts << Post.create(title: 'Parrot for sale', price: 125, description: "Only speaks klingon", location: 'Boston, MA', phone_number: '459-775-8432', email: 'birdsrule@gmail.com')

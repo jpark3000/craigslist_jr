@@ -1,7 +1,47 @@
 <h1>Categories</h1>
 
-<h2> List: </h2>
+<ul>
 <% @categories.each do |category| %>
-  <a href=<% category.    %><%= category.title %></a>
+  <li><a href="category/<%= category.id %>"><%= category.title %></a></li>
 <% end %>
-<!-- Categories.all -->
+</ul>
+
+<h1>Make a new post</h1>
+
+<form action="/create_post" method="post">
+
+<p>Select Categories</p>
+<select name ="category_id">
+<option value="1">Automobiles</option>
+<option value="2">Appliances</option>
+<option value="3">Books</option>
+<option value="4">Pets</option>
+</select>
+<br>
+
+<p>Title:</p>
+<input type="text" name="title">
+<br>
+
+<p>Price:</p>
+<input type="number" name="price">
+<br>
+
+<p>Location:</p>
+<input type="text" name="location">
+<br>
+
+<p>Phone:</p>
+<input type="text" name="phone_number">
+<br>
+
+<p>Email:</p>
+<input type="text" name="email">
+<br>
+
+<p>Description:</p>
+<textarea cols="40" rows="5" name="description"></textarea>
+<br>
+
+<input type="submit" value="Submit">
+</form>
