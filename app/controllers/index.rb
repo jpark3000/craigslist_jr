@@ -4,12 +4,14 @@ get '/' do
   erb :index
 end
 
+
 get '/category/:id' do
   @category = Category.find(params[:id])
   # @header = category.title
   @posts = @category.posts
   erb :category_posts
 end
+
 
 post "/create_post" do
   @post = Post.create(params)

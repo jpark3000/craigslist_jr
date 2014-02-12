@@ -7,6 +7,7 @@ class CreatePosts < ActiveRecord::Migration
       t.string :location
       t.string :phone_number
       t.string :email
+      t.string :key
       t.belongs_to :category
       t.timestamps
     end
